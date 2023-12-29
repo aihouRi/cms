@@ -2,7 +2,7 @@
 
 <div id="wrapper">
 
-<?php if($connection) echo "true"; ?>
+    <?php if ($connection) echo "true"; ?>
 
     <!-- Navigation -->
     <?php include "includes/admin_navigation.php"; ?>
@@ -16,11 +16,15 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Welcome to admin
-                        <small>Author</small>
+
+                        <small>
+                            <?php echo $_SESSION['username']; ?>
+                        </small>
+                        
                     </h1>
                 </div>
 
-                
+
             </div>
             <!-- /.row -->
 
