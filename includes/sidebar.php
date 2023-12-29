@@ -48,7 +48,7 @@
     </div>
 
     <!-- Side Widget Well -->
-    <?php include "widget.php"; ?>
+    
 
 
 </div>
