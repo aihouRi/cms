@@ -27,9 +27,7 @@
                 $post_content = substr($row['post_content'], 0, 50);
                 $post_status = $row['post_status'];
 
-                if ($post_status !== 'published') {
-                    echo "<h1 class='text-center'>No Post Available</h1>";
-                } else {
+                if ($post_status == 'published') {
 
             ?>
                     <h1 class="page-header">
@@ -49,7 +47,7 @@
                     <img class="img-responsive" src="images/<?php echo $post_image; ?>" alt="">
                     <hr>
                     <p><?php echo $post_content ?></p>
-                    <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    
 
                     <hr>
 
@@ -77,7 +75,9 @@
     </div>
     <!-- /.row -->
 
+
     <hr>
 
     <!-- Footer -->
     <?php include "includes/footer.php"; ?>
+</div>

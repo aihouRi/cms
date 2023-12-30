@@ -6,6 +6,7 @@
             <th>Comment</th>
             <th>Email</th>
             <th>Status</th>
+            <th>In Response to</th>
             <th>Date</th>
             <th>Approve</th>
             <th>Unapprove</th>
@@ -36,7 +37,6 @@
             echo "<td>{$comment_content}</td>";
             echo "<td>{$comment_email}</td>";
             echo "<td>{$comment_status}</td>";
-
 
             $query = "SELECT * FROM posts WHERE post_id = $comment_post_id ";
             $select_post_id_query = mysqli_query($connection, $query);
