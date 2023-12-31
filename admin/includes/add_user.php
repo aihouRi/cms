@@ -10,6 +10,7 @@ if (isset($_POST['create_user'])) {
         $username = $_POST['username'];
         $user_email = $_POST['user_email'];
         $user_password = $_POST['user_password'];
+        $user_role = $_POST['user_role'];
     
         // $post_date = date('d-m-y');
     
@@ -17,7 +18,7 @@ if (isset($_POST['create_user'])) {
     
         $query = "INSERT INTO users(user_firstname, user_lastname, username, user_email, user_password, user_role) ";
     
-        $query .= "VALUES('{$user_firstname}','{$user_lastname}','{$username}','{$user_email}','{$user_password}','subscriber') ";
+        $query .= "VALUES('{$user_firstname}','{$user_lastname}','{$username}','{$user_email}','{$user_password}','{$user_role}') ";
     
         $create_user_query = mysqli_query($connection, $query);
     

@@ -222,3 +222,14 @@ ul.alert-dropdown {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+
+#bulkOptionsContainer {
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#MyApplyAndAddNew {
+    margin-top: 20px;
+}

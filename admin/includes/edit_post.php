@@ -58,6 +58,8 @@ if(isset($_POST['update_post'])){
         
         confirmQuery($update_post);
         
+
+        echo "<p class='bg-success'>Post Updated. <a href='../post.php?p_id={$the_post_id}'>View Post</a> or <a href='posts.php'>Edit More Posts</a></p>";
         
         
     
@@ -101,9 +103,22 @@ if(isset($_POST['update_post'])){
     </div>
 
     <div class="form-group">
+        <select name="status" id="">
+            <option value='<?php echo $post_status; ?>'><?php echo $post_status; ?></option>
+            <?php
+            if ($post_status == 'published') {
+                echo "<option value='draft'>Draft</option>";
+            } else {
+                echo "<option value='published'>Publish</option>";
+            }
+            ?>
+        </select>
+    </div>
+
+    <!-- <div class="form-group">
         <label for="status">Post Status</label>
         <input class="form-control" type="text" name="status" value="<?php echo $post_status; ?>">
-    </div>
+    </div> -->
 
     <div class="form-group">
         <label for="image">Post Image</label>
