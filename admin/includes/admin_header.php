@@ -48,6 +48,8 @@ if (!isset($_SESSION['user_role'])) {
 
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="../css/loader.css">
+
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 

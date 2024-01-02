@@ -1,3 +1,5 @@
+
+
 <?php
 
 function confirmQuery($result)
@@ -59,4 +61,11 @@ function deleteCategories()
         $delete_query = mysqli_query($connection, $query);
         header("Location: categories.php");
     }
+}
+
+
+function redirect($location)
+{
+    header("Location:" . $location);
+    exit;
 }
